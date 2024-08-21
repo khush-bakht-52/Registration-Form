@@ -1,0 +1,105 @@
+/* General page layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Start content from the top */
+    min-height: 100vh; /* Allow the body to extend beyond the viewport height */
+    flex-direction: column;
+}
+
+.registration-form {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    border: 4px solid royalblue; /* Royal blue square boundary */
+    padding: 20px; /* Padding inside the border */
+    box-sizing: border-box; /* Include padding in total width */
+    background-color: white;
+    border-radius: 10px; /* Optional: To add slightly rounded corners */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+    min-width: calc(33.333% - 10px);
+    margin-right: 10px;
+}
+
+.input-group:last-child {
+    margin-right: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+h2 {
+    color: #333;
+}
+
+.faint-heading {
+    color: #aaa;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: royalblue;
+    color: white;
+    border: 2px solid royalblue;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: auto;
+}
+
+button:hover {
+    background-color: #003cb3;
+}
+
+input[type="date"] {
+    padding: 6px;
+}
+
+.button-text {
+    margin-right: 5px;
+}
+
+.display-data {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+.display-data h3 {
+    margin-top: 0;
+}

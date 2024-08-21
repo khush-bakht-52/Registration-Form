@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="registration-form">
+        <h2>Registration Form</h2>
+
+        <h2 class="faint-heading">Personal Details</h2>
+        <div class="row">
+            <div class="input-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" placeholder="Enter your mobile number" required>
+            </div>
+            <div class="input-group">
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="occupation">Occupation</label>
+                <input type="text" id="occupation" placeholder="Enter your occupation" required>
+            </div>
+        </div>
+
+        <h2 class="faint-heading">Identity Details</h2>
+
+        <div class="row">
+            <div class="input-group">
+                <label for="id-type">ID Type</label>
+                <input type="text" id="id-type" placeholder="Enter ID type" required>
+            </div>
+            <div class="input-group">
+                <label for="id-number">ID Number</label>
+                <input type="text" id="id-number" placeholder="Enter ID number" required>
+            </div>
+            <div class="input-group">
+                <label for="issue-authority">Issue Authority</label>
+                <input type="text" id="issue-authority" placeholder="Enter issuing authority" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-group">
+                <label for="issue-date">Issue Date</label>
+                <input type="date" id="issue-date" required>
+            </div>
+            <div class="input-group">
+                <label for="issue-state">Issue State</label>
+                <input type="text" id="issue-state" placeholder="Enter issue state" required>
+            </div>
+            <div class="input-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="date" id="expiry-date" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <button type="button" onclick="displayFormData()">
+                <span class="button-text">Next</span> &rarr;
+            </button>
+        </div>
+    </div>
+
+    <div id="display-data" class="display-data" style="display: none;">
+        <h3>Entered Data:</h3>
+        <p id="display-content"></p>
+    </div>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
